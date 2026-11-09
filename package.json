@@ -1,0 +1,50 @@
+{
+  "name": "vimium-ime",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "pnpm": ">=11"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^26.13.0",
+      "onFail": "download"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^12.18.0",
+      "onFail": "download"
+    }
+  },
+  "scripts": {
+    "dev": "wxt --browser firefox --mv2",
+    "build": "wxt build --browser firefox --mv2",
+    "zip": "wxt zip --browser firefox --mv2",
+    "postinstall": "wxt prepare",
+    "preversion": "pnpm check",
+    "compile": "tsc --noEmit",
+    "lint": "eslint --max-warnings=0",
+    "format": "prettier . --write --list-different",
+    "format:ci": "prettier . --check",
+    "check": "concurrently 'pnpm build' 'pnpm compile' 'pnpm lint' 'pnpm format:ci'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^26.6.6",
+    "@wxt-dev/auto-icons": "^1.1.2",
+    "concurrently": "^10.0.6",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import-x": "^4.17.1",
+    "eslint-plugin-regexp": "^3.3.3",
+    "eslint-plugin-unicorn": "^79.0.0",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.6",
+    "wxt": "^0.21.5"
+  }
+}
