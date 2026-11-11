@@ -3,5 +3,6 @@
   "description": "native vimium-ime",
   "path": ".\\vimium-ime-native.exe",
   "type": "stdio",
-  "allowed_extensions": ["{6c970293-25d9-478b-947e-9d079ede791d}"]
+  "allowed_extensions": ["{6c970293-25d9-478b-947e-9d079ede791d}"],
+  "allowed_origins": ["chrome-extension://enalimdofahhcchfbhijhgeeecmomfjp/"]
 }
