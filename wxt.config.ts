@@ -7,6 +7,7 @@ export default defineConfig({
     artifactTemplate: "firefox.xpi",
   },
   manifest: {
+    permissions: ["nativeMessaging"],
     browser_specific_settings: {
       gecko: {
         id: "{6c970293-25d9-478b-947e-9d079ede791d}",
