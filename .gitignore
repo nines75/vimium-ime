@@ -1,7 +1,9 @@
 /node_modules
 /.vscode
-target/
 
 # WXT
 /.wxt
 /.output
+
+# native
+target/

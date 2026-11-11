@@ -10,7 +10,7 @@ import stylistic from "@stylistic/eslint-plugin";
 const isCi = process.env.CI === "true";
 
 export default defineConfig(
-  globalIgnores([".output/", ".wxt/"]),
+  globalIgnores([".output/", ".wxt/", "native/"]),
 
   {
     files: ["**/*.{ts,tsx}"],
