@@ -1,6 +1,6 @@
 {
   "name": "vimium.ime.native",
-  "description": "native vimium-ime",
+  "description": "native Vimium-IME",
   "path": ".\\vimium-ime-native.exe",
   "type": "stdio",
   "allowed_extensions": ["{6c970293-25d9-478b-947e-9d079ede791d}"]

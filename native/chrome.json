@@ -1,6 +1,6 @@
 {
   "name": "vimium.ime.native",
-  "description": "native vimium-ime",
+  "description": "native Vimium-IME",
   "path": ".\\vimium-ime-native.exe",
   "type": "stdio",
   "allowed_origins": ["chrome-extension://enalimdofahhcchfbhijhgeeecmomfjp/"]
