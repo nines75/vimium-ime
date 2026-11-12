@@ -21,8 +21,8 @@ Windowsのみ対応しています
 ### Chrome
 
 > [!WARNING]
-> ステップ3でWSL上のフォルダを読み込んだ場合、Chromeが起動するたびにWSLも起動します。  
-> そのため、生成されたchrome-mv3をWSL外にコピーしたうえでChromeに読み込むことをお勧めします。
+> ステップ3でWSL上のフォルダを読み込んだ場合、Chromeが起動するたびにWSLも起動します  
+> そのため、生成されたchrome-mv3をWSL外にコピーしたうえでChromeに読み込むことをお勧めします
 
 1. `pnpm install`
 2. `pnpm build:chrome`
