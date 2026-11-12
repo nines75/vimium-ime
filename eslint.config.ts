@@ -69,28 +69,6 @@ export default defineConfig(
           allowRegExp: false,
         },
       ],
-      "unicorn/filename-case": [
-        "error",
-        {
-          cases: {
-            kebabCase: true,
-            pascalCase: true,
-          },
-        },
-      ],
-
-      // -------------------------------------------------------------------------------------------
-      // 無効化
-      // -------------------------------------------------------------------------------------------
-
-      "unicorn/name-replacements": "off",
-      "unicorn/no-null": "off",
-      "unicorn/no-break-in-nested-loop": "off",
-      "unicorn/require-array-sort-compare": "off",
-      "unicorn/max-nested-calls": "off",
-      "unicorn/isolated-functions": "off",
-      "unicorn/consistent-boolean-name": "off",
-      "unicorn/prefer-ternary": "off",
 
       // -------------------------------------------------------------------------------------------
       // 有効化
