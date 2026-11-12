@@ -14,6 +14,10 @@ Windowsのみ対応しています
 
 ### Firefox
 
+> [!WARNING]
+> 未署名のアドオンを使用するためには、対応するFirefoxと設定の変更が必要です  
+> 詳細は[こちら](https://support.mozilla.org/ja/kb/add-on-signing-in-firefox#w_wei-shu-ming-noadoonwoshi-itaichang-he-shang-ji-yu-za-xiang-ke)を参照してください
+
 1. `pnpm install`
 2. `pnpm zip`
 3. `about:addons`から`.output/firefox.xpi`を読み込む
