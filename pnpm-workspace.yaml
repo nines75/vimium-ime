@@ -1,9 +1,6 @@
 allowBuilds:
-  esbuild: true
   sharp: true
   unrs-resolver: false
-update:
-  githubActions: true
 minimumReleaseAge: 4320 # 3日
 trustPolicy: no-downgrade
 trustPolicyIgnoreAfter: 144000 # 100日
