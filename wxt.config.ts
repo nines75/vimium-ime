@@ -5,6 +5,7 @@ export default defineConfig({
   imports: false,
   zip: {
     artifactTemplate: "firefox.xpi",
+    zipSources: false, // ストアに公開しないため不要。有効にする場合nativeフォルダを除外する
   },
   manifest: {
     permissions: ["nativeMessaging"],
