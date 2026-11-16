@@ -2,6 +2,7 @@ import { browser, defineContentScript } from "#imports";
 
 export default defineContentScript({
   matches: ["http://*/*", "https://*/*"],
+  runAt: "document_start",
   main() {
     const observer = new MutationObserver(onHtmlChange);
     observer.observe(document.documentElement, { childList: true });
