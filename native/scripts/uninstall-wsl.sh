@@ -1,13 +1,13 @@
 #!/bin/bash
 
-ROOT="$(dirname "$(cargo locate-project --message-format plain)")"
-source $ROOT/scripts/config.sh
+ROOT=$(dirname "$(cargo locate-project --message-format plain)")
+source "$ROOT/scripts/config.sh"
 
 # プロセス停止
-pwsh.exe -Command "Stop-Process -Name '$APP_NAME' -ErrorAction SilentlyContinue"
+pwsh.exe -Command "Stop-Process -Name $APP_NAME -ErrorAction SilentlyContinue"
 
 # バイナリ削除
-rm -rf $INSTALL_PATH
+rm -rf "$INSTALL_PATH"
 
 # レジストリ削除
 pwsh.exe -Command "if (Test-Path $REG_PATH_FIREFOX) { Remove-Item -Path $REG_PATH_FIREFOX -Recurse }"

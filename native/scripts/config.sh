@@ -1,5 +1,5 @@
 USER_PROFILE=$(pwsh.exe -Command '$env:UserProfile' | tr -d "\r")
-USER_PROFILE_WSL=$(wslpath $USER_PROFILE)
+USER_PROFILE_WSL=$(wslpath "$USER_PROFILE")
 
 APP_NAME=vimium-ime-native
 REG_NAME=vimium.ime.native
