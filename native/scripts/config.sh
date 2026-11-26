@@ -1,13 +1,13 @@
-USER_PROFILE=$(pwsh.exe -Command '$env:UserProfile' | tr -d "\r")
-USER_PROFILE_WSL=$(wslpath "$USER_PROFILE")
+HOME_PATH=$(pwsh.exe -Command '$env:UserProfile' | tr -d "\r")
+HOME_PATH_WSL=$(wslpath "$HOME_PATH")
 
 APP_NAME=vimium-ime-native
 REG_NAME=vimium.ime.native
 
-INSTALL_PATH=$USER_PROFILE_WSL/$REG_NAME
+INSTALL_PATH=$HOME_PATH_WSL/$REG_NAME
 
-MANIFEST_PATH_FIREFOX="$USER_PROFILE\\$REG_NAME\firefox.json"
-MANIFEST_PATH_CHROME="$USER_PROFILE\\$REG_NAME\chrome.json"
+MANIFEST_PATH_FIREFOX="$HOME_PATH\\$REG_NAME\firefox.json"
+MANIFEST_PATH_CHROME="$HOME_PATH\\$REG_NAME\chrome.json"
 
 REG_PATH_FIREFOX="HKCU:\Software\Mozilla\NativeMessagingHosts\\$REG_NAME"
 REG_PATH_CHROME="HKCU:\Software\Google\Chrome\NativeMessagingHosts\\$REG_NAME"
